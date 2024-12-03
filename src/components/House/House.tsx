@@ -21,6 +21,10 @@ interface HouseProps {
     reminder: {
       enable: string;
     };
+    footer: {
+      createdBy: string;
+      name: string;
+    };
   };
   remindersEnabled: boolean;
   toggleReminders: () => void;
@@ -86,13 +90,13 @@ const House: React.FC<HouseProps> = ({
 
       {/* Footer for Credit */}
       <footer className="house-footer">
-        Created by{" "}
+        {translations.footer.createdBy}{" "}
         <a
           href="https://github.com/Karrar2k"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Karrar Almayali
+          {translations.footer.name}
         </a>
       </footer>
     </div>

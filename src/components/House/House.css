@@ -14,19 +14,19 @@
 
 /* General House Styling */
 .house {
-  position: relative; /* Ensures the house stays centered */
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--house-bg); /* Dynamic background color */
-  border: 2px solid var(--house-border); /* Dynamic border color */
+  background-color: var(--house-bg);
+  border: 2px solid var(--house-border);
   border-radius: 16px;
   padding: 20px;
   width: 500px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  color: var(--text-color); /* Dynamic text color */
-  margin: 0 auto; /* Center the house in the layout */
+  color: var(--text-color);
+  margin: 0 auto;
 }
 
 /* Header Styling */
@@ -69,10 +69,10 @@
   font-size: 18px;
   font-family: "Alexandria";
   text-align: center;
-  border: 1px solid var(--house-border); /* Dynamic border color */
+  border: 1px solid var(--house-border);
   border-radius: 8px;
-  background-color: var(--text-color); /* Inverse text color for background */
-  color: var(--house-bg); /* Inverse background for text */
+  background-color: var(--text-color);
+  color: var(--house-bg);
   outline: none;
   width: 80%;
   transition: box-shadow 0.2s ease;
@@ -80,7 +80,7 @@
 }
 
 .city-selector:focus {
-  box-shadow: 0 0 4px var(--house-border); /* Dynamic border on focus */
+  box-shadow: 0 0 4px var(--house-border);
 }
 
 /* Reminder Section */
@@ -112,14 +112,14 @@
   width: 50px; /* Enough for 2 digits */
   padding: 6px;
   font-size: 14px;
-  border: 1px solid var(--house-border); /* Dynamic border color */
+  border: 1px solid var(--house-border);
   border-radius: 8px;
   text-align: center;
   outline: none;
 }
 
 .reminder-input input:focus {
-  box-shadow: 0 0 4px var(--house-border); /* Dynamic border on focus */
+  box-shadow: 0 0 4px var(--house-border);
 }
 
 .adhan-status {
@@ -133,7 +133,7 @@
 .house-container {
   display: flex;
   justify-content: center;
-  gap: 40px; /* Adds space between the house and the RemindMe container */
+  gap: 40px;
   align-items: center;
 }
 

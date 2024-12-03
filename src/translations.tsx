@@ -45,6 +45,10 @@ const translations = {
       confirmation:
         "Reminder set for {minutes} minutes before the next prayer.",
     },
+    footer: {
+      createdBy: "Created by",
+      name: "Karrar Almayali",
+    },
   },
   ar: {
     adhanplaying: "سيتم تشغيل الأذان.",
@@ -90,6 +94,10 @@ const translations = {
       setR: "ضبط التذكير",
       edit: "صحح",
       confirmation: "تم ضبط التذكير لـ {minutes} دقائق قبل الصلاة التالية.",
+    },
+    footer: {
+      createBy: "من إنشاء",
+      name: "كرار الميالي",
     },
   },
 };
