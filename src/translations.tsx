@@ -96,7 +96,7 @@ const translations = {
       confirmation: "تم ضبط التذكير لـ {minutes} دقائق قبل الصلاة التالية.",
     },
     footer: {
-      createBy: "من إنشاء",
+      createdBy: "من إنشاء",
       name: "كرار الميالي",
     },
   },

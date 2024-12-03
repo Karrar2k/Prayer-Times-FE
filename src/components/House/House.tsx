@@ -1,6 +1,6 @@
 import React from "react";
 import PrayerTimes from "../PrayerTimes/PrayerTimes";
-import RemindToggle from "../ui/RemindToggle"; // Assuming this is your slider component
+import RemindToggle from "../ui/RemindToggle";
 import "./House.css";
 
 interface HouseProps {
