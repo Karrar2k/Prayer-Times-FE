@@ -1,0 +1,129 @@
+/* General Modal Styling */
+.settings-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.settings-modal {
+  background: var(--modal-bg);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  animation: slideIn 0.4s ease;
+  color: var(--modal-text-color);
+}
+
+.settings-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+}
+
+.theme-toggle,
+.language-toggle,
+.adhan-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.theme-toggle .toggle-label:first-child,
+.language-toggle .toggle-label:first-child,
+.adhan-toggle .toggle-label:first-child {
+  text-align: left;
+}
+
+.theme-toggle .toggle-label:last-child,
+.language-toggle .toggle-label:last-child,
+.adhan-toggle .toggle-label:last-child {
+  text-align: right;
+}
+
+.toggle-label {
+  flex: 1;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--modal-text-color);
+}
+
+.volume-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+
+/* Close Button */
+.close-button {
+  padding: 8px 16px;
+  font-size: 14px;
+  background: var(--button-bg);
+  color: var(--button-text-color);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.close-button:hover {
+  background: var(--button-hover-bg);
+}
+
+/* Light Theme */
+.settings-modal.light {
+  --modal-bg: #68bbbb;
+  --modal-text-color: #0c2525;
+  --button-bg: #aad9d9;
+  --button-text-color: #0c2525;
+  --button-hover-bg: #729292;
+}
+
+/* Dark Theme */
+.settings-modal.dark {
+  --modal-bg: #413177;
+  --modal-text-color: #d3d7d5;
+  --button-bg: #19132e;
+  --button-text-color: #d3d7d5;
+  --button-hover-bg: #625592;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

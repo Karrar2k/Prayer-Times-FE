@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Teko:wght@300..700&display=swap');
+
+/* Global font styles for the app */
+html[dir="ltr"] {
+  font-family: 'Teko', sans-serif;
+  font-size: 26px;
+}
+
+html[dir="rtl"] {
+  font-family: 'Alexandria', sans-serif;
+  font-size: 22px;
+}
+
+/* Specific rules for dynamic changes */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Additional fine-tuning if needed */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+p, label, input, select, button {
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body[dir="rtl"] {
+  direction: rtl;
+}
+
+body[dir="ltr"] {
+  direction: ltr;
+}

@@ -1,0 +1,78 @@
+/* General Prayer Times Styles */
+.prayer-times {
+  margin-top: 20px;
+  width: 100%;
+  text-align: left;
+}
+
+/* Apply specific colors for each theme */
+.prayer-times.light {
+  --card-bg: #68bbbb;
+  --text-strong-color: #0c2525;
+  --imsaak-bg: #c8eded;
+  --imsaak-color: #0c2525;
+  --error-color: #e63946;
+}
+
+.prayer-times.dark {
+  --card-bg: #413177;
+  --text-strong-color: #d3d7d5;
+  --imsaak-bg: #5a4e7c;
+  --imsaak-color: #d3d7d5;
+  --error-color: #e63946;
+}
+
+.prayer-times ul {
+  list-style: none;
+  padding: 0;
+}
+
+.prayer-times li {
+  margin: 10px 0;
+  padding: 15px;
+  background-color: var(--card-bg); /* Use theme-specific color */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.prayer-times li strong {
+  color: var(--text-strong-color); /* Use theme-specific text color */
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+/* Imsaak Card */
+.imsaak-card {
+  width: 90%; /* Smaller card width */
+  background-color: var(--imsaak-bg); /* Use theme-specific background */
+  color: var(--imsaak-color); /* Use theme-specific text color */
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Loading and Error Messages */
+.loading,
+.error {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: var(--error-color); /* Error color for both themes */
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

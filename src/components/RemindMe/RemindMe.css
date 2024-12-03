@@ -1,0 +1,124 @@
+/* General Styling for the RemindMe Container */
+.remindme-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: var(--remind-bg);
+  color: var(--remind-text);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  z-index: 10;
+  direction: var(--direction);
+}
+
+/* Arabic-specific adjustments */
+html[dir="rtl"] .remindme-container {
+  left: calc(100% + 60px);
+  direction: rtl;
+}
+
+html[dir="ltr"] .remindme-container {
+  left: calc(100% + 20px);
+  direction: ltr;
+}
+
+/* Ensure buttons align properly */
+.remindme-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+
+
+/* Title Styling */
+.remindme-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Input Field Styling */
+.remindme-container input[type="number"],
+.remindme-container select {
+  width: 80%;
+  max-width: 250px;
+  padding: 8px;
+  border: 1px solid var(--input-border);
+  border-radius: 8px;
+  background-color: var(--input-bg);
+  color: var(--input-text);
+  font-size: 14px;
+  text-align: center;
+}
+
+.remindme-edit-button,
+.remindme-test-button,
+.remindme-stop-test-button {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.remindme-test-button:hover,
+.remindme-stop-test-button:hover {
+  background-color: var(--button-hover-bg);
+}
+
+/* Reminder Button Styling */
+.remindme-set-button {
+  width: 80%;
+  max-width: 250px;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.remindme-set-button:hover {
+  background-color: var(--button-hover-bg);
+}
+
+/* Dark Theme Variables */
+.remindme-container.dark {
+  --remind-bg: #1d1e59;
+  --remind-text: #e7e7ed;
+  --input-border: #555;
+  --input-bg: #2b2c5c;
+  --input-text: #e7e7ed;
+  --button-bg: #625592;
+  --button-text: #ffffff;
+  --button-hover-bg: #4b417a;
+}
+
+/* Light Theme Variables */
+.remindme-container.light {
+  --remind-bg: #b4dde9;
+  --remind-text: #333333;
+  --input-border: #ddd;
+  --input-bg: #ffffff;
+  --input-text: #333333;
+  --button-bg: #68bbbb;
+  --button-text: #ffffff;
+  --button-hover-bg: #5aa3a3;
+}

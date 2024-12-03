@@ -1,0 +1,138 @@
+/* Light Theme */
+.house.light {
+  --house-bg: #aad9d9;
+  --house-border: #0c2525;
+  --text-color: #0c2525;
+}
+
+/* Dark Theme */
+.house.dark {
+  --house-bg: #19132e;
+  --house-border: #d3d7d5;
+  --text-color: #d3d7d5;
+}
+
+/* General House Styling */
+.house {
+  position: relative; /* Ensures the house stays centered */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--house-bg); /* Dynamic background color */
+  border: 2px solid var(--house-border); /* Dynamic border color */
+  border-radius: 16px;
+  padding: 20px;
+  width: 500px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  color: var(--text-color); /* Dynamic text color */
+  margin: 0 auto; /* Center the house in the layout */
+}
+
+/* Header Styling */
+.house-header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 1;
+}
+
+.settings-gear {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.settings-gear:hover {
+  transform: rotate(90deg);
+}
+
+/* Content Styling */
+.house-content {
+  text-align: center;
+}
+
+.current-date {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 16px 0;
+}
+
+/* City Selector */
+.city-selector {
+  margin-top: 10px;
+  padding: 12px;
+  font-size: 18px;
+  font-family: "Alexandria";
+  text-align: center;
+  border: 1px solid var(--house-border); /* Dynamic border color */
+  border-radius: 8px;
+  background-color: var(--text-color); /* Inverse text color for background */
+  color: var(--house-bg); /* Inverse background for text */
+  outline: none;
+  width: 80%;
+  transition: box-shadow 0.2s ease;
+  margin: auto;
+}
+
+.city-selector:focus {
+  box-shadow: 0 0 4px var(--house-border); /* Dynamic border on focus */
+}
+
+/* Reminder Section */
+.reminder-section {
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.reminder-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.reminder-input {
+  margin-top: 8px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.reminder-input input {
+  width: 50px; /* Enough for 2 digits */
+  padding: 6px;
+  font-size: 14px;
+  border: 1px solid var(--house-border); /* Dynamic border color */
+  border-radius: 8px;
+  text-align: center;
+  outline: none;
+}
+
+.reminder-input input:focus {
+  box-shadow: 0 0 4px var(--house-border); /* Dynamic border on focus */
+}
+
+.adhan-status {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--text-primary-color);
+}
+
+/* Position Adjustment for RemindMe */
+.house-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Adds space between the house and the RemindMe container */
+  align-items: center;
+}

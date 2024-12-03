@@ -1,0 +1,29 @@
+/* Overall page styles */
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Overall page styles */
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  position: relative;
+}
+
+/* House stays centered */
+.house-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
