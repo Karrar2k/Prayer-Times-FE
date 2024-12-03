@@ -20,7 +20,7 @@ interface HouseProps {
     adhanplaying: string;
     reminder: {
       enable: string;
-    }
+    };
   };
   remindersEnabled: boolean;
   toggleReminders: () => void;
@@ -83,6 +83,18 @@ const House: React.FC<HouseProps> = ({
           </label>
         </div>
       </div>
+
+      {/* Footer for Credit */}
+      <footer className="house-footer">
+        Created by{" "}
+        <a
+          href="https://github.com/Karrar2k"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Karrar Almayali
+        </a>
+      </footer>
     </div>
   );
 };

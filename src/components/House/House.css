@@ -136,3 +136,20 @@
   gap: 40px; /* Adds space between the house and the RemindMe container */
   align-items: center;
 }
+
+.house-footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+.house-footer a {
+  color: var(--text-color);
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.house-footer a:hover {
+  color: var(--active-text-color);
+}
